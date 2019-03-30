@@ -1,0 +1,42 @@
+<div class="container custom-container-2">
+
+  <!-- Show it when there is no sucursal -->
+  <div class="no-data text-center" *ngIf="Sucursal.length == 0">
+    <p>There is no sucursal added yet!</p>
+    <button class="btn btn-outline-primary" routerLink="/create-sucursal">Add Sucursal</button>
+  </div>
+
+  <!-- Employees list table, it hides when there is no sucursal -->
+  <div *ngIf="Sucursal.length !== 0">
+    <h3 class="mb-3 text-center">Sucursal List</h3>
+
+    <div class="col-md-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Sucursal Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Address</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let sucursal of Sucursal">
+            <td>{{sucursal.id}}</td>
+            <td>{{sucursal.name}}</td>
+            <td>{{sucursal.phone}}</td>
+            <td>{{sucursal.address}}</td>
+
+            <td>
+                <span class="edit" routerLink="/sucursal-edit/{{sucursal.id}}">Edit</span>
+                <span class="delete" (click)="deleteSucursal(sucursal.id)">Delete</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>
