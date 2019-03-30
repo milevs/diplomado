@@ -20,7 +20,7 @@ export class SucursalEditComponent implements OnInit {
     })
   }
 
-   // Update employee data
+   // Update sucursal data
    updateSucursal() {
     if(window.confirm('Are you sure, you want to update?')){
       this.restApi.updateSucursal(this.id, this.sucursalData).subscribe(data => {
