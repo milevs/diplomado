@@ -14,19 +14,23 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th scope="col">Sucursal Id</th>
+            <th scope="col">Sucursal</th>
             <th scope="col">Name</th>
+            <th scope="col">Description</th>
             <th scope="col">Phone</th>
-            <th scope="col">Address</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Manager</th>
             <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let sucursal of Sucursal">
-            <td>{{sucursal.id}}</td>
+          <tr *ngFor="let sucursal of Sucursal; let i = index ">
+            <td>{{sucursal.id + i }}</td>    
             <td>{{sucursal.name}}</td>
+            <td>{{sucursal.description}}</td>
             <td>{{sucursal.phone}}</td>
-            <td>{{sucursal.address}}</td>
+            <td>{{sucursal.mobile}}</td>
+            <td>{{sucursal.manager}}</td>
 
             <td>
                 <span class="edit" routerLink="/sucursal-edit/{{sucursal.id}}">Edit</span>

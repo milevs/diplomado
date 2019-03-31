@@ -1,7 +1,9 @@
 export class Sucursal {
-    id: string;
+    id: number;    
     name: string;
+    description: string;
     phone: number;
-    address: string;
+    mobile: number
+    manager: string;
 
 }

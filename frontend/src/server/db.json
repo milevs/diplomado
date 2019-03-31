@@ -3,19 +3,25 @@
     {
       "id": 1,
       "name": "Tony Stark Pizza",
+      "description": "NY City",
       "phone": "001-123-4567",
-      "address": "NY"
+      "mobile": "454-565-009",
+      "manager": "Pepito"
     },
     {
-      "id": 2,
-      "name": "Black Widow Pizza",
-      "phone": "001-123-4568",
-      "address": "AV. 123"
+      "name": "Dominos Pizza",
+      "description": "Av. Ecologica Nro.420",
+      "phone": "5678345",
+      "mobile": "67890112",
+      "manager": "Windsor",
+      "id": 2
     },
     {
       "name": "Dumbo Pizza",
-      "phone": "123465",
-      "address": "prado",
+      "description": "Av. Heroinas",
+      "phone": "444555566",
+      "mobile": "12345678",
+      "manager": "Dumbo",
       "id": 3
     }
   ]
