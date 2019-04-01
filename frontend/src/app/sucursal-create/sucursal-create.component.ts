@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { RestApiService } from "../shared/rest-api.service";
+import { RestApiService } from "https://practicademo.azurewebsites.net/api/pizza_branch";
 
 @Component({
   selector: 'app-sucursal-create',
