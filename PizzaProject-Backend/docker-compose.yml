@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 services:
   app:
     container_name: pizza_project
@@ -11,7 +11,6 @@ services:
   mongo:
     container_name: mongo
     image: mongo
-    volumes:
-      - ./data:/data/db
     ports:
       - "27017:27017"
+      
